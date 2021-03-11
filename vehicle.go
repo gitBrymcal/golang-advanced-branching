@@ -1,21 +1,25 @@
 package main
 
-//vehicle struct
-type vehicle struct {
-	car   *Car
-	truck *Truck
-	bike  string
+//vehicle interface
+type vehicle interface {
 }
 
 //Car struct
-type Car struct {
+type car struct {
 	model       string
 	make        string
 	typeVehicle string
 }
 
 //Truck struct
-type Truck struct {
+type truck struct {
+	model       string
+	make        string
+	typeVehicle string
+}
+
+//Bike struct
+type bike struct {
 	model       string
 	make        string
 	typeVehicle string
